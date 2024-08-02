@@ -1,14 +1,10 @@
 ---
-- name: Playbook to configure ansible controller post installation
+- name: Print Hello
   hosts: localhost
   connection: local
-  vars:
-    manifest_file_name: manifest_Zigfreed_20240528T153016Z.zip
-  vars_files:
-    - files/{{ manifest_file_name }}
 
   tasks:
 
     - name: Print
-      ansible.builtin.debug:
+      debug:
         msg: "hello"
