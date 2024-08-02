@@ -3,26 +3,12 @@
   hosts: localhost
   connection: local
   vars:
-    manifest_file_name: manifest_Zigfreed_20240528T153016Z.zip
+      manifest_file_name: manifest_Zigfreed_20240528T153016Z.zip
   vars_files:
     - files/{{ manifest_file_name }}
 
-  pre_tasks:
-    # - name: Check for our mandatory variables
-    #   # You can create a custom credential for the mandatory variables
-    #   ansible.builtin.assert:
-    #     that:
-    #       - controller_hostname is defined
-    #       - controller_username is defined
-    #       - controller_password is defined
-    #     fail_msg: "Fixme"
-    #     success_msg: "All mandatory variables have been set"
+  tasks:
 
-    - name: Include vars from controller_configs directory
-      ansible.builtin.include_vars:
-        dir: ./yaml
-        ignore_files: [controller_config.yml.template]
-        extensions: ["yml"]
-
-  roles:
-    - {role: infra.controller_configuration.license, when: controller_license is defined}
+    - name: Print
+      ansible.builtin.debug:
+        msg: "hello"
