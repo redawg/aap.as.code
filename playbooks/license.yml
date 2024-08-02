@@ -28,5 +28,5 @@
         ignore_files: [controller_config.yml.template]
         extensions: ["yml"]
 
-  # roles:
-  #   - {role: infra.controller_configuration.license, when: controller_license is defined}
+  roles:
+    - {role: infra.controller_configuration.license, when: controller_license is defined}
