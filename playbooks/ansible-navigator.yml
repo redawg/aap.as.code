@@ -9,3 +9,7 @@ ansible-navigator:
       policy: missing
   playbook-artifact:
     enable: false
+  logging:
+    level: critical
+    append: false
+    file: /tmp/ansible-navigator.log
