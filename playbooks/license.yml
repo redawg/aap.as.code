@@ -1,10 +1,15 @@
 ---
-- name: Print Hello
+- name: Playbook to configure ansible controller post installation
   hosts: localhost
   connection: local
+  vars:
+    my_manifest_file: manifest_Zigfreed_20240528T153016Z.zip
+    controller_validate_certs: false
+    controller_hostname: controller.example.com
+    controller_username: admin
+    controller_password: changeme
+    controller_license:
+      manifest_file: files/{{ my_manifest_file }}
 
-  tasks:
-
-    - name: Print
-      debug:
-        msg: "hello"
+  roles:
+    - {role: infra.controller_configuration.license}
