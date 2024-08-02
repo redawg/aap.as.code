@@ -15,11 +15,7 @@
           - controller_hostname is defined
           - controller_username is defined
           - controller_password is defined
-        fail_msg: |
-          Define following vars here, or in controller_configs/controller_auth.yml
-          controller_hostname: ansible-controller-web-svc-test-project.example.com
-          controller_username: admin
-          controller_password: changeme
+        fail_msg: "Fixme"
         success_msg: "All mandatory variables have been set"
 
     - name: Include vars from controller_configs directory
