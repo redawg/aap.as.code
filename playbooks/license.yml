@@ -9,7 +9,7 @@
     controller_username: admin
     controller_password: changeme
     controller_license:
-      manifest_file: files/{{ my_manifest_file }}
+      manifest_file: files/manifest_Zigfreed_20240528T153016Z.zip
 
   roles:
     - {role: infra.controller_configuration.license}
