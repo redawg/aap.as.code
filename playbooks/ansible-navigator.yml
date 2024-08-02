@@ -2,7 +2,7 @@
 ansible-navigator:
   ansible:
     config:
-      path: ../ansible.cfg
+      path: ./ansible.cfg
 
   execution-environment:
     image: registry.redhat.io/ansible-automation-platform-23/ee-supported-rhel8
