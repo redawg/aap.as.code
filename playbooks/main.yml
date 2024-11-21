@@ -5,7 +5,7 @@
   tasks:
 
     # fail with good error for Automation controller user
-    - name: Determine that both AAP and Machine credentials are set
+    - name: Determine that red hat automation platform credential exists
       ansible.builtin.assert:
         that:
           - "lookup('ansible.builtin.env', 'CONTROLLER_USERNAME') !=''"
@@ -15,7 +15,7 @@
           - "Red Hat Ansible Automation Platform credential is not set"
           - "Please assign correct credentials to the Job Template"
 
-    - name: Create a new token using username/password
+    - name: Create a new token using username and password
       ansible.controller.token:
         controller_host: "{{ lookup('ansible.builtin.env', 'CONTROLLER_HOST') }}"
         controller_username: "{{ lookup('ansible.builtin.env', 'CONTROLLER_USERNAME') }}"
@@ -29,7 +29,7 @@
       ansible.builtin.include_vars:
         dir: files/config_as_code
 
-    - name: Demo Components
+    - name: Do stuff
       vars:
         meta_dependency_check: false  # noqa: var-naming[no-role-prefix]
       ansible.builtin.include_role:
