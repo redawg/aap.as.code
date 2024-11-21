@@ -1,0 +1,11 @@
+---
+teams:
+- name: "Network"
+  organization: "AmesCO"
+  state: exists
+- name: "Server"
+  organization: "AmesCO"
+  state: exists
+- name: "Storage"
+  organization: "AmesCO"
+  state: exists

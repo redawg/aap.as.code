@@ -1,5 +1,7 @@
 ---
 aap_organizations:
-  - name: Network
-  - name: Server
-  - name: Storage
+  - name: AmesCO
+  - name: LowcherCO
+  - name: GilbertCO
+  - name: HinsonCO
+  - name: LeblancCO
