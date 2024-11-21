@@ -2,10 +2,10 @@
 teams:
 - name: "Network"
   organization: "AmesCO"
-  state: exists
+  state: present
 - name: "Server"
   organization: "AmesCO"
-  state: exists
+  state: present
 - name: "Storage"
   organization: "AmesCO"
-  state: exists
+  state: present
