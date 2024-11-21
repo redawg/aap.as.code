@@ -1,6 +1,8 @@
 ---
 aap_organizations:
-  - name: Network Team
+  - name: Network
     state: present
-  - name: Server Team
+  - name: Server
+    state: present
+  - name: Storage
     state: present
