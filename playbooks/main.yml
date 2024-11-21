@@ -24,7 +24,7 @@
 
     - name: Create a new token using username and password
       ansible.controller.token:
-        controller_host: "{{ lookup('ansible.builtin.env', 'CONTROLLER_HOST') }}"
+        controller_host: "{{ lookup('ansible.builtin.env', 'CONTROLLER_HOST') }}:8443"
         controller_username: "{{ lookup('ansible.builtin.env', 'CONTROLLER_USERNAME') }}"
         controller_password: "{{ lookup('ansible.builtin.env', 'CONTROLLER_PASSWORD') }}"
         validate_certs: false
@@ -49,7 +49,7 @@
 
     - name: Remove my token
       ansible.controller.token:
-        controller_host: "{{ lookup('ansible.builtin.env', 'CONTROLLER_HOST') }}"
+        controller_host: "{{ lookup('ansible.builtin.env', 'CONTROLLER_HOST') }}:8443"
         controller_oauthtoken: "{{ controller_token }}"
         existing_token: "{{ controller_token }}"
         validate_certs: false
