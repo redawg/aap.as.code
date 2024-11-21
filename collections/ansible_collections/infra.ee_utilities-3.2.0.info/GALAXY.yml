@@ -1,8 +1,0 @@
-download_url: https://galaxy.ansible.com/api/v3/plugin/ansible/content/published/collections/artifacts/infra-ee_utilities-3.2.0.tar.gz
-format_version: 1.0.0
-name: ee_utilities
-namespace: infra
-server: https://galaxy.ansible.com/api/
-signatures: []
-version: 3.2.0
-version_url: /api/v3/plugin/ansible/content/published/collections/index/infra/ee_utilities/versions/3.2.0/
