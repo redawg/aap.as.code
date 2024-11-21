@@ -1,7 +1,8 @@
 ---
 controller_settings:
-  REDHAT_USERNAME: "{{ redhat_username }}"
-  REDHAT_PASSWORD: "{{ redhat_passwd }}"
-  INSIGHTS_TRACKING_STATE: true
-  SUBSCRIPTIONS_USERNAME: "{{ redhat_username }}"
-  SUBSCRIPTIONS_PASSWORD: "{{ redhat_passwd }}"
+  settings:
+    REDHAT_USERNAME: "{{ redhat_username }}"
+    REDHAT_PASSWORD: "{{ redhat_passwd }}"
+    INSIGHTS_TRACKING_STATE: true
+    SUBSCRIPTIONS_USERNAME: "{{ redhat_username }}"
+    SUBSCRIPTIONS_PASSWORD: "{{ redhat_passwd }}"
