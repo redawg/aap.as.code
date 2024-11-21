@@ -1,0 +1,6 @@
+---
+aap_organizations:
+  - name: Network Team
+    state: present
+  - name: Server Team
+    state: present
