@@ -11,4 +11,4 @@ gateway_settings:
   password_min_special: 0
   allow_admins_to_set_insecure: false
   custom_login_info: "Hello World"
-  custom_logo: ./files/my_logo.png
+  # custom_logo: ./files/my_logo.png
