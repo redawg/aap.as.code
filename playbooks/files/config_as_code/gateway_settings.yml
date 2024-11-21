@@ -10,6 +10,11 @@ gateway_settings:
   password_min_upper: 0
   password_min_special: 0
   allow_admins_to_set_insecure: false
+  redhat_username: "{{ redhat_username }}"
+  REDHAT_PASSWORD: "{{ redhat_passwd }}"
+  INSIGHTS_TRACKING_STATE: true
+  ANSIBLE_FACT_CACHE_TIMEOUT: 86400
+  ALLOW_OAUTH2_FOR_EXTERNAL_USERS: true
   custom_login_info: |-
     THIS SYSTEM IS PROVIDED FOR USE BY AUTHORIZED USERS ONLY.
     ALERT! You are entering into a secured area! Your IP, Login Time, Username
