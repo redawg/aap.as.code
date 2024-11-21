@@ -1,8 +1,5 @@
 ---
 aap_organizations:
   - name: Network
-    state: exists
   - name: Server
-    state: exists
   - name: Storage
-    state: exists
