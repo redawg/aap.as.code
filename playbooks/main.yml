@@ -2,6 +2,8 @@
   hosts: localhost
   gather_facts: false
   vars:
+    my_organization: AmesCO
+
     # Mapping red hat automation platform controller credential to infra.aap_configuration collection
     aap_hostname: "{{ lookup('ansible.builtin.env', 'CONTROLLER_HOST') }}"
     aap_username: "{{ lookup('ansible.builtin.env', 'CONTROLLER_USERNAME') }}"

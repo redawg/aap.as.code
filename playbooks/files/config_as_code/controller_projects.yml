@@ -1,7 +1,7 @@
 ---
 controller_projects:
 - name: aap.dailydemo.F5
-  organization: AmesCO
+  organization: "{{ my_organization }}"
   scm_clean: 'no'
   scm_delete_on_update: 'no'
   scm_type: git

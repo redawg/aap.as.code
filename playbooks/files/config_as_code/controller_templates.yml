@@ -3,7 +3,7 @@ controller_templates:
   - name: F5 Setup
     job_type: run
     inventory: AAP Managed Inventory
-    organization: AmesCO
+    organization: "{{ my_organization }}"
     execution_environment: Default execution environment
     project: aap.dailydemo.F5
     playbook: playbooks/setup_demo.yml

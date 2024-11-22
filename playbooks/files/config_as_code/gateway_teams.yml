@@ -1,11 +1,11 @@
 ---
 teams:
 - name: "Network"
-  organization: "AmesCO"
+  organization: "{{ my_organization }}"
   state: present
 - name: "Server"
-  organization: "AmesCO"
+  organization: "{{ my_organization }}"
   state: present
 - name: "Storage"
-  organization: "AmesCO"
+  organization: "{{ my_organization }}"
   state: present
