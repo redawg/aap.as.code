@@ -1,8 +1,7 @@
 ---
 controller_projects:
 - name: aap.dailydemo.F5
-  organization: Default
-  scm_branch: master
+  organization: AmesCO
   scm_clean: 'no'
   scm_delete_on_update: 'no'
   scm_type: git
