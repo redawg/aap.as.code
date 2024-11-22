@@ -1,0 +1,12 @@
+---
+controller_templates:
+  - name: F5 Setup
+    job_type: run
+    inventory: AAP Managed Inventory
+    organization: AmesCO
+    execution_environment: Default execution environment
+    project: aap.dailydemo.F5
+    playbook: playbooks/setup_demo.yml
+    credentials:
+      - Socrates
+      - "Eric Ames"
