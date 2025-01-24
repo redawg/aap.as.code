@@ -15,3 +15,4 @@ controller_templates:
       my_vault: Eric Ames
       my_rh_aap_credential: "{{ my_aap_credential }}"
       my_aws_credential: AWS Blank Open Environment pvwk8
+      aap_configuration_async_retries: 60
