@@ -5,7 +5,7 @@
     my_organization: "AmesCO"
     my_aap_url: "https://aap.kona.services"
     my_aap_credential: "aap.kona.services"
-    controller_configuration_projects_loop_delay: 2
+    controller_configuration_projects_loop_delay: 10
 
     # Mapping red hat automation platform controller credential to infra.aap_configuration collection
     aap_hostname: "{{ lookup('ansible.builtin.env', 'CONTROLLER_HOST') }}"
