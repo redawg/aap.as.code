@@ -1,4 +1,5 @@
 ---
+controller_configuration_projects_loop_delay: 10
 controller_projects:
 - name: aap.dailydemo.F5
   organization: "{{ my_organization }}"
