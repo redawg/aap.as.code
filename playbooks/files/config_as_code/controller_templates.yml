@@ -8,5 +8,5 @@ controller_templates:
     project: aap.dailydemo.F5
     playbook: playbooks/setup_demo.yml
     credentials:
-      - Socrates
+      - "{{ my_aap_credential }}"
       - "Eric Ames"
