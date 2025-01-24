@@ -2,7 +2,8 @@
   hosts: localhost
   gather_facts: false
   vars:
-    my_organization: AmesCO
+    my_organization: "AmesCO"
+    my_aap_url: "https://aap.kona.services"
 
     # Mapping red hat automation platform controller credential to infra.aap_configuration collection
     aap_hostname: "{{ lookup('ansible.builtin.env', 'CONTROLLER_HOST') }}"
