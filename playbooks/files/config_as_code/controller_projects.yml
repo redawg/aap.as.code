@@ -1,5 +1,4 @@
 ---
-controller_configuration_async_retries: 60
 controller_projects:
 - name: aap.dailydemo.F5
   organization: "{{ my_organization }}"
