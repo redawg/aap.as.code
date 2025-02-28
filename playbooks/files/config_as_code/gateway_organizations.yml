@@ -1,7 +1,7 @@
 ---
 aap_organizations:
   - name: "{{ my_organization }}"
-  - name: LowcherCO
-  - name: GilbertCO
-  - name: HinsonCO
-  - name: LeblancCO
+  - name: Networking
+  - name: Servers
+  - name: Cloud
+  - name: Security
