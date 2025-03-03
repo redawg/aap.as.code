@@ -12,7 +12,7 @@ controller_templates:
       - Vault - {{ aap_username }}
     extra_vars:
       my_organization: "{{ my_organization }}"
-      my_vault: Eric Ames
+      my_vault: "{{ my_vault }}"
       my_rh_aap_credential: "{{ my_aap_credential }}"
       my_aws_credential: AWS Blank Open Environment pvwk8
       aap_configuration_async_retries: 60
@@ -26,10 +26,10 @@ controller_templates:
     playbook: playbooks/setup_demo.yml
     credentials:
       - "{{ my_aap_credential }}"
-      - "Eric Ames"
+      - Vault - {{ aap_username }}
     extra_vars:
       my_organization: "{{ my_organization }}"
-      my_vault: Eric Ames
+      my_vault: "{{ my_vault }}"
       my_rh_aap_credential: "{{ my_aap_credential }}"
       my_aws_credential: AWS Blank Open Environment pvwk8
       aap_configuration_async_retries: 60
@@ -43,10 +43,10 @@ controller_templates:
     playbook: playbooks/setup_demo.yml
     credentials:
       - "{{ my_aap_credential }}"
-      - "Eric Ames"
+      - Vault - {{ aap_username }}
     extra_vars:
       my_organization: "{{ my_organization }}"
-      my_vault: Eric Ames
+      my_vault: "{{ my_vault }}"
       my_rh_aap_credential: "{{ my_aap_credential }}"
       my_aws_credential: AWS Blank Open Environment pvwk8
       aap_configuration_async_retries: 60
