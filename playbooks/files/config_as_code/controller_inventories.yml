@@ -3,3 +3,6 @@ controller_inventories:
   - name: AAP Managed Inventory
     organization: "{{ my_organization }}"
     description: Daily Demo Inventory
+  - name: Plex Server
+    organization: "{{ my_organization }}"
+    description: Home Plex Server for updates
