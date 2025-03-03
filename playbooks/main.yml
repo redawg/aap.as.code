@@ -48,8 +48,8 @@
     - name: Include my vault
       ansible.builtin.include_vars:
         dir: files/vaults
-        files_matching: "{{ my_vault}}"
-        
+        files_matching: "{{ my_vault }}"
+
     - name: Do stuff
       vars:
         meta_dependency_check: false  # noqa: var-naming[no-role-prefix]
