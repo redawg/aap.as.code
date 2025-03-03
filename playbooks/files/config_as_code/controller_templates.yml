@@ -4,12 +4,12 @@ controller_templates:
     job_type: run
     inventory: AAP Managed Inventory
     organization: "{{ my_organization }}"
-    execution_environment: ansible-automation-platform-24/ee-supported-rhel8
+    execution_environment: ansible-automation-platform-25/ee-supported-rhel8
     project: aap.dailydemo.F5
     playbook: playbooks/setup_demo.yml
     credentials:
       - "{{ my_aap_credential }}"
-      - Vault - "{{ aap_username }}"
+      - Vault - {{ aap_username }}
     extra_vars:
       my_organization: "{{ my_organization }}"
       my_vault: Eric Ames
