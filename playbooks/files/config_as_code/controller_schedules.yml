@@ -3,4 +3,4 @@ controller_schedules:
   - name: Plex Update Schedule
     description: Simple Weekly Schedule for updating the Plex Server
     unified_job_template: Personal - Plex Server Updated
-    rrule: "DTSTART:20191219T130551Z RRULE:FREQ=WEEKLY;INTERVAL=1;COUNT=1"
+    rrule: "DTSTART;TZID=America/Los_Angeles:20250201T040000 RRULE:FREQ=WEEKLY;INTERVAL=1;BYSECOND=0"
