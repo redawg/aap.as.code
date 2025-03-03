@@ -1,7 +1,7 @@
 ---
 controller_execution_environments:
-  - name: ansible-automation-platform-24/ee-supported-rhel8
-    image: registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel8
+  - name: ansible-automation-platform-25/ee-supported-rhel8
+    image: registry.redhat.io/ansible-automation-platform-25/ee-supported-rhel8
     pull: missing
     organization: "{{ my_organization }}"
     credential: registry.redhat.io - "{{ redhat_username }}"
