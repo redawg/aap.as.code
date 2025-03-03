@@ -56,7 +56,7 @@ controller_templates:
     organization: "{{ my_organization }}"
     execution_environment: Default execution environment
     project: A's Playbooks
-    playbook: plex/upgradplexserver.yml
+    playbook: plex/upgradeplexserver.yml
     credentials:
       - Plex Server
 
