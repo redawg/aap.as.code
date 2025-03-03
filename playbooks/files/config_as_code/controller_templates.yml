@@ -9,7 +9,7 @@ controller_templates:
     playbook: playbooks/setup_demo.yml
     credentials:
       - "{{ my_aap_credential }}"
-      - "Eric Ames"
+      - Vault - "{{ aap_username }}"
     extra_vars:
       my_organization: "{{ my_organization }}"
       my_vault: Eric Ames
