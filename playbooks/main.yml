@@ -49,17 +49,17 @@
       ansible.builtin.get_url:
         url: "{{ my vault }}"
         dest: files/vaults/remotevault.yml
-      when: remotevault == "true"
+      when: 'remotevault is true'
     - name: Include my vault
       ansible.builtin.include_vars:
         dir: files/vaults
         files_matching: remotevault.yml     
-      when: remotevault == "true"
+      when: 'remotevault is true'
     - name: Include my vault
       ansible.builtin.include_vars:
         dir: files/vaults
         files_matching: "{{ my_vault }}"
-      when: remotevault is undefined
+      when: 'remotevault is not defined'
 
 
     - name: Do stuff
