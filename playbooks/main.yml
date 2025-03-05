@@ -47,10 +47,9 @@
 
     - name: Grab vault from remote url
       ansible.builtin.get_url:
-        url: https://github.com/redawg/sourcefiles/blob/main/vault.schoenf.yml
+        url: '{{ my_vault }}'
         dest: files/vaults/remotevault.yml
-        mode: '0777'
-        owner: awx
+        mode: '0644'
       when: 'remotevault is true'
     - name: Include my  Remote vault
       ansible.builtin.include_vars:
