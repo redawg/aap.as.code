@@ -45,10 +45,22 @@
       ansible.builtin.include_vars:
         dir: files/config_as_code
 
+    - name: Grab vault from remote url
+      ansible.builtin.get_url:
+        url: "{{ my vault }}"
+        dest: files/vaults/remotevault.yml
+      when: remotevault = 1 
+    - name: Include my vault
+      ansible.builtin.include_vars:
+        dir: files/vaults
+        files_matching: remotevault.yml     
+      when: remotevault = 1
     - name: Include my vault
       ansible.builtin.include_vars:
         dir: files/vaults
         files_matching: "{{ my_vault }}"
+
+
 
     - name: Do stuff
       vars:
