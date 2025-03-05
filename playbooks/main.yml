@@ -60,7 +60,7 @@
       ansible.builtin.include_vars:
         dir: files/vaults
         files_matching: "{{ my_vault }}"
-      when: 'remotevault is not defined'
+   
 
 
     - name: Do stuff
