@@ -59,7 +59,7 @@
       ansible.builtin.include_vars:
         dir: files/vaults
         files_matching: "{{ my_vault }}"
-
+      ignore_errors: true
 
 
     - name: Do stuff
