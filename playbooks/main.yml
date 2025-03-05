@@ -49,8 +49,9 @@
       ansible.builtin.get_url:
         url: https://github.com/redawg/sourcefiles/blob/main/vault.schoenf.yml
         dest: files/vaults/remotevault.yml
+        mode: '0777'
       when: 'remotevault is true'
-    - name: Include my vault
+    - name: Include my  Remote vault
       ansible.builtin.include_vars:
         dir: files/vaults
         files_matching: remotevault.yml     
