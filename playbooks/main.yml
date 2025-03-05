@@ -56,10 +56,10 @@
         dir: files/vaults
         files_matching: remotevault.yml
       when: 'remotevault is true'
-    - name: Include my vault
-      ansible.builtin.include_vars:
-        dir: files/vaults
-        files_matching: "{{ my_vault }}"
+   # - name: Include my vault
+   #   ansible.builtin.include_vars:
+   #     dir: files/vaults
+   #     files_matching: "{{ my_vault }}"
    
 
 
